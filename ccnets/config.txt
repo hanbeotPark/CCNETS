@@ -1,0 +1,58 @@
+{
+  "dataroot": "none",
+  "LOG_PATH": "./log",
+  "TEMP_PATH": "",
+  "image_path": "none",
+  "seed": 0,
+  "ngpu": 2,
+  "lr": 2e-4,
+  "gamma": 0.99954,
+  
+  "trainer_type": "A",
+  
+  "num_epoch": 20000,
+  "batch_size": 64,
+  "step_size": 10,
+  "beta1": 0.9,
+  "manualSeed": 999,
+  "num_workers": 0,
+
+  "dropout_rate": 0.0,
+
+  "num_layer": 3,
+  "hidden_size": 256,
+  
+  "obs_size": 0,
+  "label_size": 0,
+  "explain_size": 0,
+  
+  "loss_type": "L1",
+  "error_type": "L1",
+
+  "supervised_learning_loss_type": "MSE",
+
+  "loss_reduction": "layer",
+  "error_reduction": "batch",
+
+  "reasoner_joint_type": "add",
+  "producer_joint_type": "add",
+
+  "use_reasoner_swap_inputs": false,
+  "use_producer_swap_inputs": false,
+
+  "label_type": "none",
+
+  "use_one_hot": true,
+  "use_shuffle": true,
+  "use_image": false,
+  "use_test": true,
+  
+  "selected_indices": [],
+  "n_debug_img_row": 4,
+
+  "start_cnt_save_image": 0,
+
+  "obs_fn": "sigmoid",
+  "label_fn": "none",
+  "explain_fn": "sigmoid"
+}
