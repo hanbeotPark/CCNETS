@@ -37,6 +37,9 @@ x,y = sl_with_ccnets.train(trainset, testset, ccnets, data_type)
 # ...
 
 ```
+## Using Data
+You can download imbalnced credit fraud dataset here:
+* https://fraud-detection-handbook.github.io/fraud-detection-handbook/Chapter_7_DeepLearning/FeedForwardNeuralNetworks.html
 
 ## COPYRIGHT
 COPYRIGHT (c) 2022. CCNets. All Rights reserved
