@@ -32,6 +32,7 @@ sl_with_ccnets = SupervisedLearningWithCCNets(args, model)
 # Train SupervisedLearningwithCCNETs
 x,y = sl_with_ccnets.train(trainset, testset, ccnets, data_type)
 
+# Perform prediction and validation
 # ...
 
 ```
