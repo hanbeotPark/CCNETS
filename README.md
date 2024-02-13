@@ -11,7 +11,7 @@ git clone https://github.com/hanbeotPark/CCNETS.git
 
 ## Usage
 
-The core functionality of Neucube Py revolves around the `reservoir` class, which represents the spiking neural network model. Here is a basic example of how to use Neucube Py:
+Here is a basic example of how to use CCNETS and SupervisedLearningwithCCNETs:
 
 ```python
 from ccnets.ccnets import CCNets
