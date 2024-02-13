@@ -15,6 +15,7 @@ The core functionality of Neucube Py revolves around the `reservoir` class, whic
 
 ```python
 from ccnets.ccnets import CCNets
+from ccnets.supervised_learning_with_ccnets import SupervisedLearningWithCCNets
 
 # Create a dataset
 trainset = Dataset(X_train, y_train)
