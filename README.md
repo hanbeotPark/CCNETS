@@ -14,23 +14,24 @@ git clone https://github.com/hanbeotPark/CCNETS.git
 The core functionality of Neucube Py revolves around the `reservoir` class, which represents the spiking neural network model. Here is a basic example of how to use Neucube Py:
 
 ```python
-from neucube import Reservoir
-from neucube.encoder import Delta
-from neucube.sampler import SpikeCount
+from ccnets.ccnets import CCNets
 
-# Create a Reservoir 
-res = Reservoir(inputs=14)
+# Create a dataset
+trainset = Dataset(X_train, y_train)
+testset = Dataset(X_test, y_test)
 
-# Convert data to spikes
-X = Delta().encode_dataset(data)
+# Define CCNETS
+ccnets = CCNets(args, model, model, model)
 
-# Simulate the Reservior
-out = res.simulate(X)
+# Train CCNETS 
+ccnets.train(trainset, testset)  
 
-# Extract state vectors from the spiking activity
-state_vec = SpikeCount.sample(out)
+# Define SupervisedLearningwithCCNETs
+sl_with_ccnets = SupervisedLearningWithCCNets(args, model)
 
-# Perform prediction and validation
+# Train SupervisedLearningwithCCNETs
+x,y = sl_with_ccnets.train(trainset, testset, ccnets, data_type)
+
 # ...
 
 ```
