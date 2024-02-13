@@ -8,10 +8,7 @@ To use CCNETS , you can clone this repository:
 ```bash
 git clone https://github.com/hanbeotPark/CCNETS.git
 ```
-or pip install
-```bash
-pip install git+https://github.com/hanbeotPark/CCNETS.git
-```
+
 
 
 ## COPYRIGHT
